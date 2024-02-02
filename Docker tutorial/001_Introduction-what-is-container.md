@@ -17,28 +17,28 @@ In fact, Namespace allows you to run a process in an environment where almost ev
 
 ## Question> What can namespace isolate?
 
-### Process ID (pid)
+### - Process ID (pid)
 We have namespace which can isolate process id trees
 
-### Mount (mnt)
+### - Mount (mnt)
 Or the process in a namespace can not see other mount points
 
-### Network
+### - Network
 A namespace can have a separate network stack (a feature that made many big companies interested in using the Linux kernel), which means that each process can have a separate virtual network card, a separate virtual routing table, a separate iptables, a separate firewall, etc.
 
-### User ID
+### - User ID
 A namespace can have separate users for each process.
 
-### Inter-Process Communication (IPC)
+### - Inter-Process Communication (IPC)
 Isolates inter-process communication resources such as System V IPC (Inter-Process Communication) and POSIX message queues. Processes in different IPC namespaces cannot communicate through these mechanisms.
 
-### UTS namespace (uts)
+### - UTS namespace (uts)
 Isolates hostname and NIS domain name, allowing processes inside the namespace to have their own unique values for these identifiers.
 
-### Control Group (Cgroup)
+### - Control Group (Cgroup)
 Each process can be assigned specific hardware resources
 
-### Time namespaces
+### - Time namespaces
 Each process can have its own time
 
 In the future, things like syslog namespaces are going to be added.
