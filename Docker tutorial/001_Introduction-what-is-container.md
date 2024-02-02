@@ -17,7 +17,7 @@ In fact, Namespace allows you to run a process in an environment where almost ev
 
 ## Question> What can namespace isolate?
 
-### - Process ID (pid)
+- ### Process ID (pid)
 We have namespace which can isolate process id trees
 
 ### - Mount (mnt)
